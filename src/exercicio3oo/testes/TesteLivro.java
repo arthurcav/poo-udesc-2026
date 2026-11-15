@@ -1,0 +1,24 @@
+package exercicio3oo.testes;
+
+import exercicio3oo.classes.Livro;
+
+public class TesteLivro {
+    private static final String TITULO = "A metamorfose";
+    private static final String AUTOR = "Franz Kafka";
+    private static final String GENERO = "Ficcao";
+    private static final boolean EMPRESTADO = false;
+
+    public static void main(String[] args) {
+        Livro livro = new Livro();
+
+        livro.setTitulo(TITULO);
+        livro.setAutor(AUTOR);
+        livro.setGenero(GENERO);
+        livro.setEmprestado(EMPRESTADO);
+
+        System.out.printf("Titulo: %s%n", livro.getTitulo());
+        System.out.printf("Autor: %s%n", livro.getAutor());
+        System.out.printf("Genero: %s%n", livro.getGenero());
+        System.out.printf("Emprestado: %s%n", livro.getEmprestado());
+    }
+}
